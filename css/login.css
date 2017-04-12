@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+    background: url("../img/10.jpg") no-repeat;
+    background-size: cover;
+    font-family: "Helvetica";
+    -webkit-text-size-adjust:100%;
+}
+a{
+    text-decoration: none;
+    color: #FFF;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/*字体图标*/
+.icon {
+    width: 0.60rem; height: 0.60rem;
+    fill: currentColor;
+    overflow: hidden;
+    position: absolute;
+    top:0.16rem;
+    color: #fff;
+}
+.icon2{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/*头部*/
+.head{
+    width:100%;
+    padding: 0 0.25rem;
+    position: absolute;
+    top:0;
+    z-index: 999;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    justify-content:space-between;
+    background: #202020;
+}
+.head-a1{
+    display: block;
+    width:0.6rem;
+    height:0.6rem;
+    float: left;
+}
+.head-a2{
+    display: block;
+    width:0.6rem;
+    height:0.6rem;
+}
+.head a{
+    position: relative;
+    color: #fff;
+}
+.head a:nth-child(2){
+     font-size: 0.48rem;
+     line-height: 200%;
+ }
+.head a:nth-child(3){
+    font-size: 0.48rem;
+    line-height: 200%;
+    color: #AD8955;
+}
+/*主体*/
+.shuru{
+    padding: 0 0.3rem;
+    margin-top: 0.58rem;
+    position: relative;
+    top: 0.96rem;
+}
+.shuru input{
+    width:100%;
+    height:0.86rem;
+    display: block;
+    margin-bottom: 0.33rem;
+    font-size: 0.4rem;
+    font-weight: bold;
+    color: #7F7F7F;
+}
+.shuru input:not(:last-child){
+    border: 1px solid #E1E1E1;
+    text-indent:0.3rem;
+}
+.shuru .dl input{
+    background: #AD8A55;
+    border: 0;
+    color: #fff;
+}
+.rukou{
+    padding: 0 1.5rem;
+    position: relative;
+    top:1.2rem;
+    overflow: hidden;
+}
+.rukou .rk-con div{
+    width:1rem;
+    height:1rem;
+    border-radius: 100%;
+    background: #FFD441;
+    position: relative;
+}
+.rukou .rk-con:nth-child(3){
+     margin-right: 0;
+ }
+.rukou .rk-con:nth-child(1){
+    margin-left: 0.25rem;
+}
+.rukou .rk-con{
+    width:1rem;
+    height:1.57rem;
+    float: left;
+    margin-right: 0.5rem;
+    text-align: center;
+}
+.rukou .rk-con p{
+    margin-top: 0.25rem;
+    font-size: 0.2rem;
+    color: #FFF;
+}
+.rukou .rk-con .wx{
+     background: #00CF0C;
+ }
+.rukou .rk-con .qq{
+    background: #1EA8DB;
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/iconfont.js"></script>
+    <script type="text/javascript">
+        function resize(now,type){
+            var type=type||"x";
+            var cw=document.documentElement.clientWidth;
+            var ch=document.documentElement.clientHeight;
+            var html=document.getElementsByTagName("html")[0];
+            if(type=="x"){
+                var scale=cw/now*100;
+                html.style.fontSize=scale+"px";
+            }else if(type=="y"){
+                scale=ch/now*100;
+                html.style.fontSize=scale+"px";
+            }
+        }
+        window.onload=function(){
+            resize(1334,"y");
+        }
+    </script>
+</head>
+<body>
+<div class="head">
+    <a href="index.html" class="head-a1">
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-llmainpageback"></use>
+        </svg>
+    </a>
+    <a href="">登录</a>
+    <a href="register.html">注册</a>
+</div>
+<div class="shuru">
+    <input type="text" value="账号">
+    <input type="text" value="密码">
+    <a href="index1.html" class="dl"><input type="submit"  value="登录"></a>
+</div>
+<div class="rukou">
+    <div class="rk-con">
+    <div class="wb">
+        <svg class="icon icon2" aria-hidden="true">
+            <use xlink:href="#icon-weibo"></use>
+        </svg>
+    </div>
+        <p>微博登录</p>
+    </div>
+    <div class="rk-con">
+    <div class="wx">
+        <svg class="icon icon2" aria-hidden="true">
+            <use xlink:href="#icon-weixin"></use>
+        </svg>
+    </div>
+        <p>微信登录</p>
+    </div>
+    <div class="rk-con">
+    <div class="qq">
+        <svg class="icon icon2" aria-hidden="true">
+            <use xlink:href="#icon-qq"></use>
+        </svg>
+    </div>
+        <p>qq登录</p>
+    </div>
+</div>
+</body>
+</html>

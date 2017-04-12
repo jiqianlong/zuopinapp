@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/iscroll.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body onload="loaded()">
+<div id="header">
+    <span class="left"></span>
+    <span class="right"></span>
+    biLibiLi Music
+</div>
+<div id="wrapper">
+    <div id="scroller">
+        <div class="dh">
+            <ul>
+                <li><a href="index1.html">推荐</a></li>
+                <li><a href="">乐库</a></li>
+                <li><a href="index2.html">MV</a></li>
+                <li><a href="index3.html">我的</a></li>
+            </ul>
+        </div>
+        <div class="bg">
+            <div class="persen">
+                <div class="persenk">
+                    <img src="img/panda.jpg" alt="" height="150%">
+                </div>
+                <span>Weast panda</span>
+                <p>个人中心</p>
+            </div>
+            <ul class="persenlist">
+                <li>
+                    <span class="icons"></span>
+                    本地歌曲
+                    <span class="jtk">
+                        20首歌曲
+                        <span class="jt"></span>
+                    </span>
+                </li>
+                <li>
+                    <span class="icons icons1"></span>
+                    下载歌曲
+                    <span class="jtk">
+                        20首歌曲
+                        <span class="jt"></span>
+                    </span>
+                </li>
+                <li>
+                    <span class="icons icons2"></span>
+                    收藏歌曲
+                    <span class="jtk">
+                        20首歌曲
+                        <span class="jt"></span>
+                    </span>
+                </li>
+                <li>
+                    <span class="icons icons4"></span>
+                    默认歌曲
+                    <span class="jtk">
+                        20首歌曲
+                        <span class="jt"></span>
+                    </span>
+                </li>
+                <li>
+                    <span class="icons icons3"></span>
+                    添加歌曲
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="press">
+        <div class="progress"></div>
+        <div class="prodian"></div>
+    </div>
+    <div class="star">
+        <img src="img/touxiang.jpg" alt="" width="100%">
+    </div>
+    <div class="music">
+        <p class="textmusic">周二珂</p>
+        <p class="textmu">告白气球</p>
+    </div>
+    <div class="musicbtn">
+        <p class="houtui"></p>
+        <p class="playbtn">
+            <span class="play"></span>
+            <span class="pause"></span>
+        </p>
+        <p class="next"></p>
+        <p class="biaodan"></p>
+        <ul class="mrlist">
+            <li>
+                默认列表
+                <div class="linebox">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                </div>
+            </li>
+            <li>周二珂--告白气球
+                <audio src="music/music.mp3" loop="loop" class="mus"></audio>
+            </li>
+            <li>周二珂--告白气球
+                <audio src="music/music.mp3" loop="loop" class="mus"></audio>
+            </li>
+            <li>周二珂--告白气球
+                <audio src="music/music.mp3" loop="loop" class="mus"></audio>
+            </li>
+            <li>蔡静雅--红色高跟鞋
+                <audio src="music/music.mp3" loop="loop" class="mus"></audio>
+            </li>
+            <li>蔡静雅--红色高跟鞋
+                <audio src="music/music.mp3" loop="loop" class="mus"></audio>
+            </li>
+            <li>蔡静雅--红色高跟鞋
+                <audio src="music/music.mp3" loop="loop" class="mus"></audio>
+            </li>
+            <li>蔡静雅--红色高跟鞋
+                <audio src="music/music.mp3" loop="loop" class="mus"></audio>
+            </li>
+            <li>蔡静雅--红色高跟鞋
+                <audio src="music/music.mp3" loop="loop" class="mus"></audio>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script>
+    var myScroll;
+    function loaded () {
+        myScroll = new IScroll('#wrapper', { mouseWheel: true ,bounce: true});
+    }
+    document.addEventListener("touchmove",function(e){
+        e.preventDefault();
+
+    })
+</script>
+</html>
